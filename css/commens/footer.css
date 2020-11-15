@@ -1,0 +1,145 @@
+@charset "utf-8";
+
+.footer {
+    width: 100%;
+    height: auto;
+}
+.footer .inner-footer {
+    width: 100%;
+    max-width: 1250px;
+    height: auto;
+    margin: 0 auto;
+    text-align: center; 
+    padding: 30px 50px; 
+        
+}
+.footer .inner-footer ul.fnb {
+    margin-bottom: 15px;
+}
+.footer .inner-footer ul.fnb>li {
+    position: relative;
+    display: inline;
+    padding: 0 7px 0 10px;
+    white-space: nowrap;
+}
+.footer .inner-footer ul.fnb>li:before {
+    content: ''; 
+    width: 1px; 
+    height: 18px; 
+    background-color: #dbdbdb; 
+    position: absolute; 
+    left: 0; 
+    top: 2px;
+}
+.footer .inner-footer ul.fnb>li:first-child:before {
+    width: 0;
+}
+.footer .inner-footer ul.fir {
+    width: 75%;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 auto;
+}
+.footer .inner-footer ul.fir>li {
+    position: relative;
+    display: inline;
+    padding: 0 7px 0 10px;
+    white-space: nowrap;
+    color: #777;
+}
+.footer .inner-footer ul.fir>li:before {
+    content: ''; 
+    width: 1px; 
+    height: 18px;
+    background-color: #dbdbdb; 
+    position: absolute; 
+    left: 0; 
+    top: 2px;
+}
+.footer .inner-footer ul.fir>li:first-child:before {
+    width: 0;
+}
+.footer .inner-footer ul.sec {
+    width: 75%;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 auto;
+}
+.footer .inner-footer ul.sec>li {
+    position: relative;
+    display: inline;
+    padding: 0 7px 0 10px;
+    white-space: nowrap;
+    color: #777;
+}
+.footer .inner-footer ul.sec>li:before {
+    content: ''; 
+    width: 1px; 
+    height: 18px;
+    background-color: #dbdbdb; 
+    position: absolute; 
+    left: 0; 
+    top: 2px;
+}
+.footer .inner-footer ul.sec>li:first-child:before {
+    width: 0;
+}
+.footer .inner-footer address {
+    padding-top: 15px;
+    font-size: 13px;
+    line-height: 1.5em;
+    font-style: normal;
+    color: #777;
+}
+
+
+
+
+
+/* 태블릿 */
+@media screen and (min-width: 767px) and  (max-width: 967px) {
+    .footer .inner-footer {
+        width: 90%;
+        padding: 10px 20px; 
+    }
+    .footer .inner-footer ul>li {
+        font-size: 14px;
+    }
+    .footer .inner-footer ul.fir {
+        width: 100%;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+    .footer .inner-footer ul.sec {
+        width: 100%;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
+/* 모바일 */
+@media screen and (max-width: 768px) {
+    .footer .inner-footer {
+        width: 90%;
+        padding: 10px 10px; 
+    }
+    .footer .inner-footer ul.fir {
+        display: inline;
+        margin: 0;
+        padding: 0;
+    }
+    .footer .inner-footer ul.sec {
+        display: inline;
+        margin: 0;
+        padding: 0;
+    }
+    .footer .inner-footer ul>li {
+        font-size: 12px;
+    }
+    .footer .inner-footer address {
+        font-size: 11px;
+    }
+}

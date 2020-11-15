@@ -1,0 +1,442 @@
+@charset "utf-8";
+
+
+
+.container {
+    width: 100%;
+    height: auto;
+    padding-top: 100px;
+}
+.container .inner-container {
+    width: 100%;
+    height: auto;
+}
+
+
+
+/* gallery */
+.container .inner-container .gallery {
+    width: 100%;
+    max-width: 1920px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.container .inner-container .gallery .inner-gallery {
+    width: 100%;
+    max-width: 1920px;
+    height: 550px;
+    position: relative;
+}
+
+.container .inner-container .gallery .inner-gallery .gallery-con {
+    width: 100%;
+    max-width: 1920px;
+    height: auto;
+}
+
+.container .inner-container .gallery .inner-gallery .gallery-con > ul > li {
+    width: 100%;
+    max-width: 1920px;
+    height: 550px;
+    position: absolute;
+    z-index: 998;
+    cursor: pointer;
+}
+.container .inner-container .gallery .inner-gallery .items {
+    width: 150px;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    margin-left: -75px;
+    bottom: 20px;
+    z-index: 998;
+}
+
+.container .inner-container .gallery .inner-gallery .items > ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .inner-container .gallery .inner-gallery .items > ul > li {
+    width: 10px;
+    height: 10px;
+    background: rgba(0,0,0,0.17);
+    box-sizing: border-box;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.on {
+    background: #a4a4a4 !important;
+}
+
+
+.container .inner-container .section {
+    width: 100%;
+    height: auto;
+}
+
+
+/* section1 */
+.container .inner-container .section.sec1 {
+    width: 100%;
+    max-width: 1400px;
+    height: 350px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+.container .inner-container .section.sec1 ul.section1>li {
+    width: 49.5%;
+    height: 335px;
+    float: left;
+    transition: all 0.1s;
+    cursor: pointer;
+}
+.container .inner-container .section.sec1 ul.section1>li:nth-child(1) {
+    background: url(../../img/section_1_1.jpg) no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    margin-right: 1%;
+}
+
+.container .inner-container .section.sec1 ul.section1>li:nth-child(2) {
+    background: url(../../img/section_1_2.jpg) no-repeat no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+
+/* section2 */
+.container .inner-container .section.sec2 {
+    width: 100%;
+    max-width: 1400px;
+    height: auto;
+    margin: 0 auto;   
+}
+.container .inner-container .section.sec2 p {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    line-height: 1.5em;
+    font-weight: 600;
+    color: #222222;
+}
+.container .inner-container .section.sec2 ul.section2>li {
+    height: 335px;
+    float: left;
+    transition: all 0.1s;
+    margin-right: 0.5%;
+    cursor: pointer;
+}
+.container .inner-container .section.sec2 ul.section2>li:nth-child(1) {
+    width: 25%;
+    background: url(../../img/brandstory.jpg) no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.container .inner-container .section.sec2 ul.section2>li:nth-child(2) {
+    width: 25%;
+    background: url(../../img/search.jpg) no-repeat no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+.container .inner-container .section.sec2 ul.section2>li:nth-child(3) {
+    width: 49%;
+    position: relative;
+    margin: 0;
+}
+.container .inner-container .section.sec2 ul.section2>li:nth-child(3) iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* section3 */
+.container .inner-container .section.sec3 {
+    width: 100%;
+    max-width: 1400px;
+    height: 370px;
+    margin: 0 auto;   
+    overflow: hidden;
+}
+.container .inner-container .section.sec3 .line {
+    display: flex;
+}
+.container .inner-container .section.sec3 .line p {
+    width: 100%;
+    margin: 50px 0 10px 0;
+    font-size: 25px;
+    line-height: 1.5em;
+    font-weight: 600;
+    color: #222222;
+}
+.container .inner-container .section.sec3 span.arrow {
+    margin-top: 55px;
+    margin-bottom: 10px;
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    z-index: 998;
+}
+.container .inner-container .section.sec3 span.arrow.arrowleft {
+    right: 95px;
+}
+.container .inner-container .section.sec3 span.arrow.arrowright {
+    right: 65px;
+}
+.container .inner-container .section.sec3 ul.section3 {
+    width: 100%;
+}
+.container .inner-container .section.sec3 ul.section3>li {
+    width: 19%;
+    height: 270px;
+    float: left;
+    transition: all 0.1s;
+    cursor: pointer;
+    margin: 0 0.5%;
+}
+
+
+/* section4 */
+.container .inner-container .section.sec4 {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    padding-top: 50px;
+    margin-top: 50px;
+}
+.container .inner-container .section.sec4 .inner-sec4 {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto; 
+}
+.container .inner-container .section.sec4 .inner-sec4 p {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 25px;
+    line-height: 1.5em;
+    font-weight: 600;
+    color: #222222;
+}
+.container .inner-container .section.sec4 .inner-sec4 ul {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.container .inner-container .section.sec4 .inner-sec4 ul>li {
+    width: 25%;
+    margin: 30px 20px;
+}
+
+
+
+
+/* 태블릿 */
+@media screen and (min-width: 767px) and  (max-width: 967px){
+    .container {
+        padding-top: 0;
+    }
+    .container .inner-container .gallery .inner-gallery {
+        width: 100%;
+        height: 410px;
+    }
+    .container .inner-container .gallery .inner-gallery .gallery-con > ul > li {
+        width: 100%;
+        height: 410px;
+    }
+    .container .inner-container .section.sec1 {
+        height: 200px;
+    }
+    .container .inner-container .section.sec1 ul.section1 {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .container .inner-container .section.sec1 ul.section1>li {
+        height: 165px;
+    }
+    .container .inner-container .section.sec2 {
+        width: 80%;
+    }
+    .container .inner-container .section.sec2 p {
+        margin-top: 10px;
+    }
+    .container .inner-container .section.sec2 ul.section2>li {
+        height: 340px;
+    }
+    .container .inner-container .section.sec2 ul.section2>li:nth-child(1) {
+        width: 49.5%;
+        margin-right: 1%;
+    }
+
+    .container .inner-container .section.sec2 ul.section2>li:nth-child(2) {
+        width: 49.5%;
+        margin: 0;
+    }
+    .container .inner-container .section.sec2 ul.section2>li:nth-child(3) {
+        width: 100%;
+        margin-top: 1%; 
+    }
+    .container .inner-container .section.sec2 ul.section2>li:nth-child(3) iframe {
+        position: absolute;
+        width: 100%;
+        height: 340px;
+    }
+    .container .inner-container .section.sec3 {
+        width: 80%;
+        height: 300px;
+    }
+    .container .inner-container .section.sec3 span.arrow.arrowleft {
+        right: 120px;
+    }
+    .container .inner-container .section.sec3 span.arrow.arrowright {
+        right: 80px;
+    }
+    .container .inner-container .section.sec3 ul.section3 {
+        width: 100%;
+    }
+    .container .inner-container .section.sec3 ul.section3>li {
+        width: 32%;
+        height: 200px;
+        margin: 0 0.6666%;
+    }
+    .container .inner-container .section.sec4 .inner-sec4 {
+        width: 80%;
+        height: 300px;
+    }    
+    .container .inner-container .section.sec4 .inner-sec4 ul {
+        width: 100%;
+        margin: 0 auto;
+        display: inline-block;
+    }
+    .container .inner-container .section.sec4 .inner-sec4 ul>li {
+        width: 50%;
+        margin: 0;
+        padding-top: 30px;
+        float: left;
+    }
+}
+
+/* 모바일 */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        height: auto;
+        padding-top: 0px;
+    }
+    .container .inner-container .gallery .inner-gallery {
+        width: 100%;
+        height: 280px;
+    }
+    .container .inner-container .gallery .inner-gallery .gallery-con > ul > li {
+        width: 100%;
+        height: 280px;
+    }
+    .container .inner-container .section.sec1.section1 {
+        height: 480px;
+        padding-top: 30px;
+    }
+    .container .inner-container .section.sec1 ul.section1 {
+        width: 90%;
+        height: 450px;
+        margin: 0 auto;
+    }
+    .container .inner-container .section.sec1 ul.section1>li {
+        width: 100%;
+        height: 220px;
+        margin: 0;
+    }
+    .container .inner-container .section.sec1 ul.section1>li:nth-child(1) {
+        margin-bottom: 1%;
+    }
+    .container .inner-container .section.sec2 {
+        width: 90%;
+    }
+    .container .inner-container .section.sec2 p {
+        padding-top: 80px;
+        font-size: 16px;
+    }
+    .container .inner-container .section.sec2 ul.section2>li {
+        height: 200px;
+    }
+    .container .inner-container .section.sec2 ul.section2>li:nth-child(1) {
+        width: 49.5%;
+        margin-right: 1%;
+    }
+
+    .container .inner-container .section.sec2 ul.section2>li:nth-child(2) {
+        width: 49.5%;
+        margin: 0;
+    }
+    .container .inner-container .section.sec2 ul.section2>li:nth-child(3) {
+        width: 100%;
+        margin-top: 1%; 
+    }
+    .container .inner-container .section.sec2 ul.section2>li:nth-child(3) iframe {
+        position: absolute;
+        width: 100%;
+        height: 250px;
+    }
+    .container .inner-container .section.sec3 {
+        width: 90%;
+        height: 330px;
+    }
+    .container .inner-container .section.sec3 .line p {
+        padding-top: 30px;
+        font-size: 16px;
+    }
+    .container .inner-container .section.sec3 span.arrow.arrowleft {
+        padding-top: 25px;
+        right: 65px;
+    }
+    .container .inner-container .section.sec3 span.arrow.arrowright {
+        padding-top: 25px;
+        right: 30px;
+    }
+    .container .inner-container .section.sec3 ul.section3 {
+        width: 100%;
+    }
+    .container .inner-container .section.sec3 ul.section3>li {
+        width: 47%;
+        height: 200px;
+        margin: 0 1.5%;
+    }
+    .container .inner-container .section.sec4 .inner-sec4 {
+        width: 90%;
+        height: 280px;
+    }    
+    .container .inner-container .section.sec4 .inner-sec4 p {
+        font-size: 16px;
+    }
+    .container .inner-container .section.sec4 .inner-sec4 ul {
+        width: 100%;
+        margin: 0 auto;
+        display: inline-block;
+    }
+    .container .inner-container .section.sec4 .inner-sec4 ul>li {
+        width: 50%;
+        margin: 0;
+        padding-top: 30px;
+        float: left;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

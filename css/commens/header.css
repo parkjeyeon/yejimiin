@@ -1,0 +1,202 @@
+@charset "utf-8";
+
+.header {
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    background: #fff;
+}
+.header .inner-header {
+    width: 100%;
+    max-width: 1250px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .inner-header .main-gnb ul {
+    display: flex;
+}
+.header .inner-header .main-gnb ul>li {
+    display: block;
+    padding: 25px 20px;
+    font-size: 18px;
+    color: #272727;
+    font-weight: 500;
+    font-family: 'Nanum Square', '나눔 고딕', 'Nanum Gothic', sans-serif;
+}
+.header .inner-header .main-gnb ul>li a:hover {
+    color: #fe637c;
+}
+.header .inner-header .sub-gnb ul {
+    display: flex;
+}
+.header .inner-header .sub-gnb ul>li {
+    padding: 12px;
+    font-size: 13px;
+}
+.header .inner-header .sub-gnb ul>li select.language {
+    border: 0;
+    font-size: 13px;
+}
+.header .inner-header a.tooglebtn {
+    display: none;
+}
+.header .main-sub {
+    width: 100%;
+    background: rgba(119,119,119,0.2);
+}
+.header .main-sub .inner-msub {
+    width: 100%;
+    max-width: 1020px;
+    margin-left: 142px;
+    display: flex;
+    justify-content: space-around;
+}
+.header .main-sub .inner-msub ul.sub-menu {
+    width: 20%;
+    padding: 40px 0 30px; 
+    text-align: left;
+}
+.header .main-sub .inner-msub ul.sub-menu li {
+    margin: 5px 0 0;
+    color: #4b4b4b;
+}
+.header .main-sub .inner-msub ul.sub-menu li a {
+    font-size: 14px;
+}
+.header .main-sub .inner-msub ul.sub-menu li a:hover {
+    color: #fe637c;
+}
+.header .main-sub .inner-msub ul.sub-menu li.padd {
+    padding: 10px 0;
+    cursor: Default;
+}
+.header .main-sub .inner-msub ul.sub-menu li.padd a {
+    font-size: 16px;
+}
+
+
+
+
+
+/* 태블릿 */
+@media screen and (min-width: 767px) and  (max-width: 967px) {
+    .header {
+        position: relative;
+    }
+    .header .inner-header {
+        width: 90%;
+        height: 70px;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+    .header .inner-header h1.logo img {
+        height: 57px;
+    }
+    .header .inner-header .main-gnb.pc {
+        display: none;
+    }
+    .header .main-gnb {
+        width: 100%;
+    }
+    .header .main-gnb ul {
+        display: flex;
+        align-items: center;
+        margin-top: 25px;
+        border-top: 1px solid #e6e6e6;
+        border-bottom: 1px solid #e6e6e6;
+    }
+    .header .main-gnb ul>li {
+        width: 100%;
+        padding: 10px 20px;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 600;  
+    }
+    .header .main-gnb ul>li::after {
+        content: '';
+        display: block;
+        width: 90px;
+        margin: 0 auto;
+        border-bottom: solid 2px #fe637c;
+        transform: scaleX(0);
+        transition: transform 250ms ease-in-out;
+    }
+    .header .main-gnb ul>li:hover:after {
+        transform: scaleX(1);
+    }
+    .header .inner-header .sub-gnb {
+        display: none;
+    }
+    .header .inner-header a.tooglebtn {
+        display: block;
+        position: absolute;
+        top: 40px;
+        right: 45px;
+    }
+    .header .inner-header a.tooglebtn img {
+        width: 39px;
+        height: 32px;
+    }
+}
+
+
+/* 모바일 */
+@media screen and (max-width: 768px) {
+    .header {
+        position: relative;
+    }
+    .header .inner-header {
+        width: 90%;
+        height: 50px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .header .inner-header h1.logo img {
+        height: 27px;
+    }
+    .header .inner-header .main-gnb.pc {
+        display: none;
+    }
+    .header .main-gnb {
+        width: 100%;    
+    }
+    .header .main-gnb ul {
+        flex-direction: column;
+        margin-top: 27px;
+    }
+    .header .main-gnb ul>li {
+        width: 90%;
+        padding: 20px 20px;
+        text-align: left;
+        font-size: 15px;
+        font-weight: 600;
+        background: url(../../img/mobileDown.png) no-repeat 100% 50%;
+        background-size: 42px 50px;
+        border-bottom: 1px solid #e6e6e6;
+    }
+    .header .main-gnb ul>li a {
+        display: block;
+    }
+    .header .main-gnb ul>li a:hover {
+        color: #fe637c;
+    }
+    .header .inner-header .sub-gnb {
+        display: none;
+    }
+    .header .inner-header a.tooglebtn {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 32px;
+    }
+    .header .inner-header a.tooglebtn img {
+        width: 20px;
+        height: 16px;
+    }
+}
+
+
